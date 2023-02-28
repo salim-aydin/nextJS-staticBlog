@@ -1,0 +1,39 @@
+/*css  in açıklamalarını yazacağım*/
+/* detaylı açıklama*/
+.card {
+    display: flex;   /*flexbox kullanmak için*/
+    align-items: center; 
+  }
+  
+  .cardImage { /*resimlerin konumunu ayarlamak için*/
+    flex-shrink: 0;  /*flexbox içindeki elemanın büyüklüğünü ayarlamak için*/
+    position: relative; /*relative konumlandırma*/
+    height: 96px; /*yükseklik*/
+    width: 96px; /*genişlik*/
+  }
+  
+  .card img { /*resimlerin boyutunu ayarlamak için*/
+    border-radius: 8px; /*resimlerin köşelerini kıvrımlı yapmak için*/
+    object-fit: cover; /*resimlerin boyutunu ayarlamak için*/
+    
+  }
+  
+  .cardBody { /*resimlerin altındaki yazıların konumunu ayarlamak için*/
+    margin-left: 16px; /*resimlerin sol tarafından yazıların kaç px uzakta olacağını ayarlamak için*/
+  }
+  
+  .cardBody p { /*resimlerin altındaki yazıların konumunu ayarlamak için*/
+    margin-top: 4px; /*resimlerin altındaki yazıların üst tarafından kaç px uzakta olacağını ayarlamak için*/
+    display: -webkit-box; /*-webkit-box-orient: vertical; ve -webkit-line-clamp: 2; ile yazıların 2 satır olmasını sağlamak için*/
+    -webkit-line-clamp: 2; /*-webkit-box-orient: vertical; ile yazıların 2 satır olmasını sağlamak için*/
+    -webkit-box-orient: vertical; /*-webkit-line-clamp: 2; ile yazıların 2 satır olmasını sağlamak için*/
+    overflow: hidden; /*-webkit-line-clamp: 2; ile yazıların 2 satır olmasını sağlamak için*/
+  }
+  
+  .cardBody h3 { /*resimlerin altındaki yazıların konumunu ayarlamak için*/
+    display: -webkit-box; /*-webkit-box-orient: vertical; ve -webkit-line-clamp: 1; ile yazıların 1 satır olmasını sağlamak için*/
+    -webkit-line-clamp: 1; /*-webkit-box-orient: vertical; ile yazıların 1 satır olmasını sağlamak için*/
+    -webkit-box-orient: vertical; /*-webkit-line-clamp: 1; ile yazıların 1 satır olmasını sağlamak için*/
+    overflow: hidden; /*-webkit-line-clamp: 1; ile yazıların 1 satır olmasını sağlamak için*/
+    font-size: 18px; /*yazıların boyutunu ayarlamak için*/
+  }

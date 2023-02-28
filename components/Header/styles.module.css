@@ -1,0 +1,12 @@
+/*açıklamalı css */
+.header { /* header classı oluşturuldu */
+    display: flex; /* flexbox oluşturuldu */
+    align-items: center; /* flexbox elemanları yatay ortalanır */
+    justify-content: space-between; /* flexbox elemanları yatay olarak aralarına boşluk bırakır */
+}
+
+.logo { /* logo classı oluşturuldu */
+    font-size:24px;   
+    font-weight: 700; /* yazı kalınlığı */
+    color: var(--white) /* yazı rengi */
+}
